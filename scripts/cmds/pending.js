@@ -1,4 +1,4 @@
-module.exports = {
++cmd install pending.js module.exports = {
  config: {
  name: "pending",
  version: "1.0",
@@ -47,15 +47,15 @@ onReply: async function({ api, event, Reply, getLang, commandName, prefix }) {
  const index = body.split(/\s+/);
  for (const ArYanIndex of index) {
  if (isNaN(ArYanIndex) || ArYanIndex <= 0 || ArYanIndex > Reply.pending.length) return api.sendMessage(getLang("invaildNumber", ArYanIndex), threadID, messageID);
- api.sendMessage(`🦆⪼ 𝗖óก𝕟૯τ૯𝕕 ⪻🦆 
+ api.sendMessage(`👨🏽‍💻⪼ 𝗖óก𝕟૯τ૯𝕕 ⪻👨🏽‍💻
 ╭──────────────⭓
-│‣ 𝐆𝐥𝐨𝐛𝐚𝐥 𝐩𝐫𝐞𝐟𝐢𝐱: ¥
+│‣ 𝐆𝐥𝐨𝐛𝐚𝐥 𝐩𝐫𝐞𝐟𝐢𝐱: +
 │‣ 𝐘𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐩𝐫𝐞𝐟𝐢𝐱: check using prefix cmd
 ╰──────────────⭓
 ╭──────────────⭓
-│➜ 𝐎𝐭𝐡𝐞𝐫 𝐃𝐞𝐭𝐚𝐢𝐥𝐬🦆
-│Owner : Voldigo Zaraki Anos 
-│FB :https://www.facebook.com/voldigo.zaraki
+│➜ 𝐎𝐭𝐡𝐞𝐫 𝐃𝐞𝐭𝐚𝐢𝐥𝐬👨🏽‍💻
+│Owner : Chitron Bhattacharjee 
+│FB : https://www.facebook.com/adirexcb
 ╰──────────────⭓`, Reply.pending[ArYanIndex - 1].threadID);
  count+=1;
  }
