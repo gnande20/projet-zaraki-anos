@@ -1,11 +1,11 @@
-const { getStreamsFromAttachment } = global.utils;
+€cmd install notification.js const { getStreamsFromAttachment } = global.utils;
 
 module.exports = {
 	config: {
 		name: "notification",
 		aliases: ["notify", "noti"],
 		version: "1.7",
-		author: "Chitron Bhattacharjee",
+		author: "NTKhang",
 		countDown: 5,
 		role: 2,
 		description: {
